@@ -5,18 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Liltmoon Support</title>
 <style>
-body{max-width:720px;margin:0 auto;padding:48px 24px;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d1d1f;background:#fff}
+*{box-sizing:border-box}
+body{width:100%;max-width:720px;margin:0 auto;padding:48px 24px;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d1d1f;background:#fff}
 h1{font-size:36px;line-height:1.15}
 h2{margin-top:36px;font-size:22px;scroll-margin-top:24px}
 h3{margin-top:20px;font-size:17px}
 a{color:#1769aa}
-nav a{margin-right:18px}
+header nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+p,li,a{overflow-wrap:anywhere}
 .note{color:#666}
 ul{padding-left:1.2em}
 li{margin:0.35em 0}
-.toc{background:#f5f5f7;border-radius:12px;padding:16px 20px;margin:24px 0}
+.toc{background:#f5f5f7;border-radius:8px;padding:16px 20px;margin:24px 0}
 .toc a{display:block;margin:6px 0}
-.zh{margin-top:8px;color:#444;font-size:15px}
+@media(max-width:480px){body{padding:32px 20px}h1{font-size:32px}}
 </style>
 </head>
 <body>
@@ -30,7 +32,7 @@ li{margin:0.35em 0}
 </header>
 <main>
 <h1>Liltmoon Support</h1>
-<p class="note">Last updated: August 4, 2026</p>
+<p class="note">Last updated: August 5, 2026</p>
 
 <nav class="toc" aria-label="On this page">
 <strong>On this page</strong>
@@ -42,65 +44,57 @@ li{margin:0.35em 0}
 
 <section id="subscription">
 <h2>Purchases &amp; subscriptions</h2>
-<p class="zh">购买与订阅（中文摘要见下段要点；详细以英文结构为准，App 内也可查看订阅页说明。）</p>
-
 <h3>Manage or cancel</h3>
 <ul>
-<li>Open the iOS <strong>Settings</strong> app → tap your name → <strong>Subscriptions</strong>.</li>
-<li>Select Liltmoon to change plan, turn off auto-renew, or cancel. Changes follow Apple’s rules and the terms shown at purchase.</li>
+<li>Open <strong>Settings</strong>, tap your name, then tap <strong>Subscriptions</strong>.</li>
+<li>Select Liltmoon to view your options, switch plans where available, or cancel. Apple shows the effective date before you confirm a change.</li>
 <li>Apple’s guide: <a href="https://support.apple.com/HT202039">View, change, or cancel subscriptions</a>.</li>
 </ul>
 
 <h3>Restore purchases</h3>
 <ul>
-<li>Membership stays with the <strong>Apple Account</strong> that paid—not with a Liltmoon login (there isn’t one).</li>
-<li>After reinstall or a new device, open Liltmoon → <strong>Profile</strong> (or the membership screen) → use <strong>Restore Purchases</strong> while signed into the same Apple Account used for the original purchase.</li>
-<li>If premium still does not appear: check network, confirm the Apple Account, wait a moment, then try Restore again. Storefront or family-sharing rules are controlled by Apple.</li>
+<li>Your membership is tied to the <strong>Apple Account</strong> used for the purchase. Liltmoon does not have a separate login.</li>
+<li>After reinstalling Liltmoon or moving to a new iPhone, open <strong>Profile</strong> or the Membership screen and tap <strong>Restore Purchases</strong>. Use the same Apple Account that made the original purchase.</li>
+<li>If your membership still does not appear, check your connection and Apple Account, wait a moment, then try Restore Purchases again.</li>
 </ul>
 
 <h3>Trial, renewal, and billing</h3>
 <ul>
-<li>Trial length, price, and renewal text shown by the App Store at purchase are the source of truth.</li>
-<li>If a trial ends and you did not cancel, Apple may start paid renewal according to those terms.</li>
-<li>Liltmoon does not charge card numbers directly and does not see full payment-card details.</li>
+<li>The App Store shows your trial eligibility, price, and renewal terms before you confirm a purchase.</li>
+<li>Unless you cancel before the trial ends, the subscription renews according to the terms shown by the App Store.</li>
+<li>Apple handles payment. Liltmoon never receives your full payment-card details.</li>
 </ul>
 
 <h3>Refunds</h3>
 <ul>
-<li>Refunds are handled by Apple, not inside Liltmoon chat.</li>
-<li>Start at <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> or Apple’s purchase support, using the Apple Account that bought the subscription.</li>
+<li>Apple handles App Store refund requests.</li>
+<li>Visit <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> and sign in with the Apple Account that made the purchase.</li>
 </ul>
-
-<p class="zh"><strong>中文要点：</strong>管理/取消请到 设置 → 你的姓名 → 订阅。会员跟 Apple Account 走；重装后用同一账号在 App 内「恢复购买」。退款请走 Apple 官方渠道。试用与续费以购买时系统展示为准。</p>
 </section>
 
 <section id="device-data">
 <h2>Data on this iPhone (reinstall / new device)</h2>
-<p class="zh">本机数据与重装换机</p>
-
 <ul>
-<li><strong>Night Map, notes, Check-ins, and path preferences</strong> are stored on this iPhone by default. They are not a Liltmoon cloud backup today.</li>
-<li><strong>Reinstalling the app or moving to a new iPhone does not automatically transfer</strong> that local night history. There is currently <strong>no account-based restore</strong> for Night Map or journals.</li>
+<li><strong>Night Map, notes, check-ins, and path preferences</strong> stay on this iPhone by default. Liltmoon does not currently back them up to the cloud.</li>
+<li><strong>Reinstalling Liltmoon or moving to a new iPhone does not automatically transfer</strong> your local night history. Account-based restore is not currently available for Night Map or journals.</li>
 <li><strong>Membership is separate:</strong> it follows your Apple Account. Use Restore Purchases after reinstall (see above). Restoring membership does <em>not</em> restore deleted or lost local night records.</li>
 <li><strong>Clear local data</strong> (Profile → This iPhone) removes local history and preferences on this device only. It does <strong>not</strong> cancel App Store membership.</li>
-<li>Optional anonymous feature counts (only in eligible Internal QA builds, off by default) never include notes, identity, or exact event times. Standard releases keep that collection off.</li>
+<li>Eligible Internal QA builds may offer optional anonymous feature-count summaries. They are off by default and never include notes, identity, or exact event times. Standard releases keep this collection off.</li>
 </ul>
 
-<p>In the app you can also open <strong>Profile → Privacy &amp; Help → How your data works</strong> for the same boundaries in the device language.</p>
-
-<p class="zh"><strong>中文要点：</strong>夜间记录默认只在这台 iPhone。重装或换机<strong>不会</strong>自动带走 Night Map/笔记；目前也没有云端换机恢复。会员用「恢复购买」找回权益，但不等于找回本机历史。「清除本机数据」只清本机，不取消订阅。</p>
+<p>You can review these details in Liltmoon under <strong>Profile → Privacy &amp; Help → How your data works</strong>.</p>
 </section>
 
 <section id="feedback">
 <h2>Feedback &amp; contact</h2>
-<p>The preferred way to share product feedback is the in-app <strong>Send Feedback</strong> form (Profile → Privacy &amp; Help). You can choose a type, write a message, and optionally leave an email for a reply. Submissions go through Formspree to the Liltmoon inbox after the service confirms receipt.</p>
-<p>Email alternative: <a href="mailto:wangtuz29@gmail.com">wangtuz29@gmail.com</a>. For a technical issue, include app version, iPhone model, iOS version, and a short description.</p>
+<p>The easiest way to share product feedback is the in-app <strong>Send Feedback</strong> form under Profile → Privacy &amp; Help. Choose a category, write your message, and optionally add an email address if you would like a reply. Formspree processes the submission on Liltmoon’s behalf.</p>
+<p>You can also email <a href="mailto:wangtuz29@gmail.com">wangtuz29@gmail.com</a>. For a technical issue, include your app version, iPhone model, iOS version, and a brief description of what happened.</p>
 <p>Do not include payment-card details, passwords, Apple Account credentials, private journal entries, or sensitive health information. Liltmoon is not an emergency or medical support service.</p>
 </section>
 
 <section id="privacy">
 <h2>Privacy requests</h2>
-<p>For a privacy question or to request deletion of feedback or support correspondence, email <a href="mailto:wangtuz29@gmail.com">wangtuz29@gmail.com</a> with the subject line “Privacy request”.</p>
+<p>For a privacy question, or to request deletion of feedback or support correspondence, email <a href="mailto:wangtuz29@gmail.com">wangtuz29@gmail.com</a> with the subject line “Privacy request.”</p>
 <p>See also the <a href="../privacy/">Privacy Policy</a> and <a href="../privacy/choices/">Privacy Choices</a>.</p>
 </section>
 

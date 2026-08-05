@@ -5,35 +5,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Liltmoon Privacy Policy</title>
 <style>
-body{max-width:720px;margin:0 auto;padding:48px 24px;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d1d1f;background:#fff}
-h1{font-size:36px;line-height:1.15} h2{margin-top:32px;font-size:22px} a{color:#1769aa} nav a{margin-right:18px}.note{color:#666}
+*{box-sizing:border-box}
+body{width:100%;max-width:720px;margin:0 auto;padding:48px 24px;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d1d1f;background:#fff}
+h1{font-size:36px;line-height:1.15}h2{margin-top:32px;font-size:22px}a{color:#1769aa}header nav{display:flex;flex-wrap:wrap;gap:6px 18px}p,li,a{overflow-wrap:anywhere}.note{color:#666}ul{padding-left:1.2em}li{margin:.35em 0}
+@media(max-width:480px){body{padding:32px 20px}h1{font-size:32px}}
 </style>
 </head>
 <body>
 <header><nav><a href="../">Liltmoon</a><a href="./choices/">Privacy Choices</a><a href="../terms/">Terms</a><a href="../support/">Support</a></nav></header>
 <main>
 <h1>Liltmoon Privacy Policy</h1>
-<p class="note">Last updated: August 1, 2026</p>
-<p>Liltmoon is designed to support personal nighttime routines. This policy explains how standard releases and limited Internal QA builds handle information.</p>
+<p class="note">Last updated: August 5, 2026</p>
+<p>Liltmoon supports personal nighttime routines. This policy explains how standard releases and eligible Internal QA builds handle information.</p>
+
 <h2>Information stored on your device</h2>
-<p>The app stores profile preferences, a selected avatar, onboarding status, language preference, nighttime session history, check-ins, and related preferences locally on your device so it can provide its features.</p>
+<p>Liltmoon stores profile preferences, your selected avatar, onboarding status, language preference, night history, notes, check-ins, and related preferences on your iPhone so the app can provide its features. Liltmoon does not currently offer an account or cloud backup for this information.</p>
+
 <h2>Optional feedback and support</h2>
-<p>If you choose to use the in-app Send Feedback form, Liltmoon sends the feedback type, message, optional email address, and app version and build number to Formspree, a service provider that receives the form on Liltmoon's behalf and forwards it to the Liltmoon support inbox. The form does not automatically include your nighttime journal entries, sleep history, payment information, device model, or operating-system version.</p>
-<p>We use this information only to respond to you when you provide an email address, troubleshoot the app, and improve Liltmoon. Formspree is configured to archive submitted forms for 30 days. Support correspondence is retained only as long as reasonably needed to provide support or meet legal obligations. You can request deletion of feedback or support correspondence by emailing us.</p>
-<h2>Optional anonymous product analytics in Internal QA</h2>
-<p>Standard production releases keep product analytics disabled. A limited Internal QA build may show a “Share anonymous usage summaries” switch. It is off by default. If you turn it on, collection starts from that point forward; Liltmoon does not scan or upload earlier nighttime history.</p>
-<p>An Internal QA summary may contain a one-time report identifier, an ISO week, app version and build, in-app language, broad installation-age and active-night ranges, and counts of allowlisted feature interactions such as entering or completing a path, starting audio, or opening a feature. It does not contain your name, email, avatar, device identifier, advertising identifier, exact event times, journal text, notes, individual nighttime records, or a sequence of your nights. The current Internal QA upload also excludes Check-in answers and purchase results.</p>
-<p>The collector validates this fixed schema and immediately adds accepted values to group-level weekly cells. It does not keep a raw-report, user, device, session, or event table. A hash of the one-time report identifier is kept for up to eight days to prevent duplicate counting. Group aggregates are kept for up to 26 weeks. Dashboard results are suppressed until a cell reaches a minimum sample, and the dashboard does not provide a way to inspect one report or person.</p>
-<p>The aggregate collector and restricted internal dashboard use Cloudflare infrastructure on Liltmoon's behalf. Cloudflare may process network information needed to deliver and protect the service. Liltmoon's analytics code does not write IP addresses or request bodies to its business database and does not join network information to aggregate metrics.</p>
-<p>Liltmoon does not use these summaries for advertising, cross-app tracking, data sales, a server-side personal profile, or individualized recommendations. The optional feedback form described above remains a separate, user-initiated process.</p>
+<p>If you use the in-app Send Feedback form, Liltmoon sends the feedback category, your message, an optional reply email, and the app version and build number to Formspree. Formspree processes the submission on Liltmoon's behalf and delivers it to the Liltmoon support inbox.</p>
+<p>The form does not automatically include your night records, notes, payment information, iPhone model, or iOS version. Under our current Formspree plan, submission history is retained for 30 days. Support correspondence is kept only as long as reasonably necessary to provide support or meet legal obligations.</p>
+
+<h2>Optional anonymous summaries in Internal QA</h2>
+<p>Standard releases keep product analytics disabled. An eligible Internal QA build may offer a Share anonymous usage summaries switch. It is off by default. Collection begins only after you turn it on and does not import earlier night history.</p>
+<p>A summary may include a one-time report identifier, calendar week, app version and build, in-app language, broad installation-age and active-night ranges, and totals for allowlisted feature interactions such as entering or completing a path, starting audio, or opening a feature.</p>
+<p>These summaries do not include your name, email, avatar, device identifier, advertising identifier, exact event times, journal text, notes, individual night records, or a sequence of your nights. Current Internal QA uploads also exclude check-in answers and purchase results.</p>
+
+<h2>How anonymous summaries are processed</h2>
+<p>The collector checks each report against a fixed schema and immediately adds accepted values to group-level weekly totals. Liltmoon does not keep raw report, user, device, session, or event tables. A hash of the one-time report identifier is kept for up to eight days to prevent duplicate counting. Group totals are kept for no more than 26 weeks, and dashboard results remain hidden until a group reaches a minimum sample size.</p>
+<p>The collector and restricted internal dashboard use Cloudflare infrastructure on Liltmoon's behalf. Cloudflare may process network information needed to deliver and protect the service. Liltmoon's analytics code does not write IP addresses or request bodies to its business database or join network information to aggregate metrics.</p>
+<p>Liltmoon does not use these summaries for advertising, cross-app tracking, data sales, a server-side personal profile, or individualized recommendations.</p>
+
 <h2>Purchases</h2>
-<p>If subscriptions are offered, purchase processing is handled by Apple through the App Store. Liltmoon does not receive or store payment-card information.</p>
-<h2>Sharing</h2>
-<p>Liltmoon does not sell or share local in-app information for advertising. We share optional feedback-form information only with Formspree to receive and manage support submissions. If Internal QA analytics is enabled, Cloudflare processes the anonymous aggregate request as Liltmoon's infrastructure provider.</p>
+<p>Apple processes subscriptions through the App Store. Liltmoon does not receive or store your full payment-card details.</p>
+
+<h2>Sharing and service providers</h2>
+<p>Liltmoon does not sell personal information or share local app information for advertising. Formspree processes information only when you submit feedback. If Internal QA analytics is enabled, Cloudflare processes the anonymous aggregate request as Liltmoon's infrastructure provider.</p>
+
 <h2>Your choices</h2>
-<p>You can leave anonymous summaries off or turn them off at any time in an eligible Internal QA build. Turning the switch off stops future collection and clears summaries waiting to upload; it does not delete your on-device Night Map. Clearing all local app data also resets analytics consent and pending analytics state. Because accepted reports are immediately combined into thresholded group cells without a user or device identifier, Liltmoon cannot locate or remove one person's past contribution from an aggregate. See <a href="./choices/">Privacy Choices</a> for details.</p>
-<p>You may clear local app data from within the app where that option is available, or remove the app from your device. Removing the app may remove locally stored information. The current production version does not provide a Liltmoon account or cloud backup service. Please do not submit payment-card details, passwords, Apple Account credentials, or sensitive health information through the feedback form.</p>
+<p>You can leave anonymous summaries off or turn them off at any time in an eligible Internal QA build. Turning the switch off stops future collection and clears summaries waiting to upload without deleting your on-device Night Map. Clearing local app data also resets analytics consent and pending analytics state.</p>
+<p>Accepted summaries cannot be retrieved or deleted for one person after they have been combined into group totals because Liltmoon does not keep an account or lasting identifier that could locate an individual contribution. See <a href="./choices/">Privacy Choices</a> for details.</p>
+<p>You can clear local data from within Liltmoon or remove the app from your iPhone. Removing the app may remove information stored locally. Do not submit passwords, full payment-card details, Apple Account credentials, private journal entries, or sensitive health information through the feedback form.</p>
+
 <h2>Contact</h2>
-<p>For privacy questions or deletion requests, email <a href="mailto:wangtuz29@gmail.com">wangtuz29@gmail.com</a>.</p>
+<p>For privacy questions, or to request deletion of feedback or support correspondence, email <a href="mailto:wangtuz29@gmail.com">wangtuz29@gmail.com</a> with the subject line "Privacy request."</p>
 </main>
-</body></html>
+</body>
+</html>
